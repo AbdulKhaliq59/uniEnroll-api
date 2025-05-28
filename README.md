@@ -27,22 +27,25 @@ Before running this project, ensure you have the following installed on your PC:
 
 3. **Set Up Environment Variables**
    Create a `.env` file in the root directory and add the necessary environment variables. Refer to the `config/db.js` file for database configuration requirements. Example:
-   ```env
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=yourpassword
-   DB_NAME=unienroll
-   JWT_SECRET=your_jwt_secret
-   ```
+```env
+  MONGO_URI=
+  JWT_SECRET=
+  PORT=5000
+  NODE_ENV=
+```
 
-4. **Run the Project**
+```env.test
+  MONGO_URI_TEST=
+```
+  
+1. **Run the Project**
    Start the server using the following command:
    ```bash
    npm start
    ```
    The server will start running on the default port (e.g., `http://localhost:3000`).
 
-5. **Run Tests (Optional)**
+2. **Run Tests (Optional)**
    To run the test suite, use the following command:
    ```bash
    npm test
